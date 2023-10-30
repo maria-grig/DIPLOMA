@@ -45,6 +45,7 @@ android {
             buildConfigField "String", "BASE_URL", '"http://www.981757-ca08998.tmweb.ru:8080/fmh/"'
         }
     }
+    namespace 'ru.iteco.fmhandroid'
 }
 
 dependencies {
@@ -94,4 +95,17 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:29.0.3')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation "androidx.tracing:tracing:1.1.0"
+    implementation 'android.test.espresso.idling-resources:3.4.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.0-alpha01'
+    androidTestImplementation 'androidx.test:rules:1.6.0-alpha01'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.0-alpha01'
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    androidTestImplementation 'com.android.support.test: rules: 1.0.2'
+    androidTestImplementation 'io.qameta.allure-kotlin-android:2.4.0'
+
+
 }
